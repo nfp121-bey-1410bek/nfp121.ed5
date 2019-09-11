@@ -1,0 +1,1 @@
+car on a les 2 fields e1 et e2 sont protected/Private dans le paquet de l'expression e

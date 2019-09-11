@@ -1,0 +1,87 @@
+public class Add extends ExpressionB{
+
+    public static Add create(Expression e1, Expression e2){
+        return new Add(e1, e2);
+    }
+
+    private Add (Expression e1, Expression e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public String toString() {
+        return "(" + e1.toString() + " + " + e2.toString() + ")";
+    }
+
+    public int interprete(Contexte c) {
+        return e1.create() + e2.create();
+    }
+
+}
+
+-----------------------------------------------------------------------
+public class Sous extends ExpressionB{
+
+    public static Sous create(Expression e1, Expression e2){
+        return new Sous(e1, e2);
+    }
+
+    private Sous(Expression e1, Expression e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public String toString() {
+        return "(" + e1.toString() + " - " + e2.toString() + ")";
+    }
+
+    public int interprete(Contexte c) {
+        return e1.create() - e2.create();
+    }
+
+}
+
+--------------------------------------------------------------------------------
+public class Div extends ExpressionB{
+
+    public static Div create(Expression e1, Expression e2){
+        return new Div(e1, e2);
+    }
+
+    private Div(Expression e1, Expression e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public String toString() {
+        return "(" + e1.toString() + " / " + e2.toString() + ")";
+    }
+
+    public int interprete(Contexte c) {
+        return e1.create() / e2.create();
+    }
+
+}
+
+---------------------------------------------------------------------------------
+public class Mul extends ExpressionB{
+
+    public static Mul create(Expression e1, Expression e2){
+        return new Mul(e1, e2);
+    }
+
+    private Div(Expression e1, Expression e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public String toString() {
+        return "(" + e1.toString() + " * " + e2.toString() + ")";
+    }
+
+    public int interprete(Contexte c) {
+        return e1.create() * e2.create();
+    }
+
+}
+

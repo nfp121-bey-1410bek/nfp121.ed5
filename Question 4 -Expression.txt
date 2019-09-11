@@ -1,0 +1,54 @@
+using eval()
+--------------
+function func() { 
+		var a = 3; 
+		var b = 5; 
+		var x= eval(new String( a - b)); 
+		document.write(value); 
+	} 
+func(); 				 
+function func() { 
+		var c = x;
+		var d = 6; 
+		var y= eval(new String( x + d)); 
+		document.write(value); 
+	} 
+func(); 				 
+function func() { 
+		var e = y;
+		var f = 8; 
+		var y= eval(new String( y + f)); 
+		document.write(value); 
+	} 
+func(); 
+
+
+
+using evalNum()
+----------------
+while (expressionB)
+{
+      e1 expressionB= getE1();
+      double evalNum = eval(obj.e1);
+}
+
+while (expressionB)
+{
+      e2 expressionB= getE2();
+      double evalNum = eval(obj.e2);
+}
+
+
+              
+              +
+            /   \
+           +     8
+          /  \
+         -    6
+        / \
+       3   5
+
+
+
+
+

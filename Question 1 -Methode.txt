@@ -1,0 +1,3 @@
+abstract Factory bpermet de rassembler des méthodes communes à des familles d’objets différents dans une classe commune.
+il va donc nous servir pour instancier des objets.
+on utilise expressionB comme Type et on fait create aux expressions e1 et e2 comme les parametres.

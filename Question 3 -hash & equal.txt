@@ -1,0 +1,3 @@
+Parce qu'il renvoie toujours le nouveau hashCode pour chaque objet en tant que classe Object. 
+c.a.d que le hashCode de a et b doit être identique mais ne doit pas se produire.
+Donc pour utiliser notre objet dans la collection basée sur le hachage,il faut remplacer à la fois equals () et hashCode ().
